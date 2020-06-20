@@ -319,6 +319,7 @@ public class JFVeiculo extends javax.swing.JFrame {
     }
 
     private void limpeFormulario() {
+        // limpa o formulário após o preenchimento
         txtModelo.setText("");
         txtMarca.setText("");
         txtAnoFabricacao.setText("");
