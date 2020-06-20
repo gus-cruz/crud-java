@@ -1,7 +1,7 @@
 <h3 align="center">CRUD Java :pencil:</h3>
 
 ### :writing_hand: About
-In this application, we just create a simple CRUD who is what we've studied so far at JAVA.
+In this application, I and [@victorcstv](https://github.com/victorcstv) just created a simple CRUD who is what we've studied so far at JAVA.
 
 ### Features
 
