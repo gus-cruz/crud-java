@@ -45,7 +45,7 @@ public class JFVeiculo extends javax.swing.JFrame {
         tblVeiculo = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Cadastro de veículos");
+        setTitle("Cadastro de Veículos");
 
         jLabel1.setText("Modelo");
 
@@ -78,9 +78,9 @@ public class JFVeiculo extends javax.swing.JFrame {
 
         btnRemover.setText("Remover");
         btnRemover.setEnabled(false);
-        btnRemover.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnRemoverMouseClicked(evt);
+        btnRemover.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverActionPerformed(evt);
             }
         });
 
@@ -285,7 +285,7 @@ public class JFVeiculo extends javax.swing.JFrame {
         this.controleBotoes(false);
     }//GEN-LAST:event_tblVeiculoMouseClicked
 
-    private void btnRemoverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRemoverMouseClicked
+    private void btnRemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverActionPerformed
         // remove o objeto do ArrayList na posição selecionada
         this.veiculos.remove( this.linha );
 
@@ -297,7 +297,7 @@ public class JFVeiculo extends javax.swing.JFrame {
 
         // controle de botões
         this.controleBotoes(true);
-    }//GEN-LAST:event_btnRemoverMouseClicked
+    }//GEN-LAST:event_btnRemoverActionPerformed
 
     private void preenchaTabela() {
         // recupera o modelo da tabela
